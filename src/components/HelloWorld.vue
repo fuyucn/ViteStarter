@@ -1,11 +1,10 @@
-<script setup>
-import { ref } from 'vue'
+<script setup lang="ts">
+import { useCountStore } from '@/stores'
+const countStore = useCountStore()
 
 defineProps({
   msg: String
 })
-
-const count = ref(0)
 </script>
 
 <template>
@@ -24,9 +23,11 @@ const count = ref(0)
     </a>
     |
     <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Documentation</a>
+     |
+    <a href="https://pinia.vuejs.org/" target="_blank">Pinia Documentation</a>
   </p>
 
-  <button type="button" @click="count++">count is: {{ count }}</button>
+  <button type="button" @click="countStore.count++">count is: {{ countStore.count}}</button>
   <p>
     Edit
     <code>components/HelloWorld.vue</code> to test hot module replacement.
