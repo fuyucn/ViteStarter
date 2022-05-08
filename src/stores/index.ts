@@ -1,3 +1,3 @@
-import  useCountStore from './count'
+import useCountStore from './count'
 
 export { useCountStore }

@@ -1,4 +1,4 @@
-import { defineStore } from 'pinia';
+import { defineStore } from 'pinia'
 
 interface CountState {
   count: number
@@ -6,8 +6,8 @@ interface CountState {
 
 const useCountStore = defineStore('count', {
   state: (): CountState => ({
-    count: 0,
-  }),
-});
+    count: 0
+  })
+})
 
-export default useCountStore;
+export default useCountStore
