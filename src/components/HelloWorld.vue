@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
 import { useCountStore } from '@/stores'
 const countStore = useCountStore()
 
